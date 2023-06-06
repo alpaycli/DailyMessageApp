@@ -11,7 +11,55 @@
 		C96E97A82A18EB4300443F15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E97A72A18EB4300443F15 /* ContentView.swift */; };
 		C96E97AA2A18EB4500443F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96E97A92A18EB4500443F15 /* Assets.xcassets */; };
 		C96E97AD2A18EB4500443F15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96E97AC2A18EB4500443F15 /* Preview Assets.xcassets */; };
+		C96E97BA2A18EB6E00443F15 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96E97B92A18EB6E00443F15 /* WidgetKit.framework */; };
+		C96E97BC2A18EB6E00443F15 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96E97BB2A18EB6E00443F15 /* SwiftUI.framework */; };
+		C96E97BF2A18EB6E00443F15 /* MessageWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E97BE2A18EB6E00443F15 /* MessageWidgetBundle.swift */; };
+		C96E97C12A18EB6E00443F15 /* MessageWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E97C02A18EB6E00443F15 /* MessageWidget.swift */; };
+		C96E97C32A18EB7000443F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96E97C22A18EB7000443F15 /* Assets.xcassets */; };
+		C96E97C72A18EB7000443F15 /* MessageWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C96E97B72A18EB6E00443F15 /* MessageWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C96E97D02A18F70B00443F15 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E97CF2A18F70B00443F15 /* DataModel.swift */; };
+		C96E97F52A1CF86900443F15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E97A72A18EB4300443F15 /* ContentView.swift */; };
+		C96E982F2A1FFE3C00443F15 /* messages.json in Resources */ = {isa = PBXBuildFile; fileRef = C96E982E2A1FFE3C00443F15 /* messages.json */; };
+		C96E986C2A22157400443F15 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E986B2A22157400443F15 /* TabBarView.swift */; };
+		C96E986D2A22158300443F15 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E986B2A22157400443F15 /* TabBarView.swift */; };
+		C9B738122A2A295D0011F49D /* SPAlert in Frameworks */ = {isa = PBXBuildFile; productRef = C9B738112A2A295D0011F49D /* SPAlert */; };
+		C9B738152A2A2EBB0011F49D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E97CF2A18F70B00443F15 /* DataModel.swift */; };
+		C9B738192A2CD6ED0011F49D /* messages.json in Resources */ = {isa = PBXBuildFile; fileRef = C96E982E2A1FFE3C00443F15 /* messages.json */; };
+		C9B7381C2A2CDA3E0011F49D /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B7381B2A2CDA3E0011F49D /* Bundle-Decodable.swift */; };
+		C9B7381D2A2CDA3E0011F49D /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B7381B2A2CDA3E0011F49D /* Bundle-Decodable.swift */; };
+		C9B7381F2A2E24760011F49D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B7381E2A2E24760011F49D /* Message.swift */; };
+		C9B738202A2E24760011F49D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B7381E2A2E24760011F49D /* Message.swift */; };
+		C9B738222A2E2B1B0011F49D /* Color-theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B738212A2E2B1B0011F49D /* Color-theme.swift */; };
+		C9B738232A2E2DDF0011F49D /* Color-theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B738212A2E2B1B0011F49D /* Color-theme.swift */; };
+		C9D7D1F72A26495B005E44CB /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D7D1F62A26495B005E44CB /* CustomAlertView.swift */; };
+		C9D7D1F82A264C43005E44CB /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D7D1F62A26495B005E44CB /* CustomAlertView.swift */; };
+		C9D7D1FA2A2690A9005E44CB /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D7D1F92A2690A9005E44CB /* ItemView.swift */; };
+		C9D7D1FB2A277FE3005E44CB /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D7D1F92A2690A9005E44CB /* ItemView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C96E97C52A18EB7000443F15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C96E979A2A18EB4300443F15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C96E97B62A18EB6E00443F15;
+			remoteInfo = MessageWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C96E97CB2A18EB7000443F15 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C96E97C72A18EB7000443F15 /* MessageWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C96E97A22A18EB4300443F15 /* DailyMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +67,23 @@
 		C96E97A72A18EB4300443F15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C96E97A92A18EB4500443F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C96E97AC2A18EB4500443F15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C96E97B72A18EB6E00443F15 /* MessageWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessageWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96E97B92A18EB6E00443F15 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C96E97BB2A18EB6E00443F15 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C96E97BE2A18EB6E00443F15 /* MessageWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageWidgetBundle.swift; sourceTree = "<group>"; };
+		C96E97C02A18EB6E00443F15 /* MessageWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageWidget.swift; sourceTree = "<group>"; };
+		C96E97C22A18EB7000443F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C96E97C42A18EB7000443F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96E97CF2A18F70B00443F15 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		C96E982C2A1FFB2400443F15 /* DailyMessage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyMessage.entitlements; sourceTree = "<group>"; };
+		C96E982D2A1FFC7500443F15 /* MessageWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MessageWidgetExtension.entitlements; sourceTree = "<group>"; };
+		C96E982E2A1FFE3C00443F15 /* messages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = messages.json; sourceTree = "<group>"; };
+		C96E986B2A22157400443F15 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		C9B7381B2A2CDA3E0011F49D /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		C9B7381E2A2E24760011F49D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		C9B738212A2E2B1B0011F49D /* Color-theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-theme.swift"; sourceTree = "<group>"; };
+		C9D7D1F62A26495B005E44CB /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		C9D7D1F92A2690A9005E44CB /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +91,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B738122A2A295D0011F49D /* SPAlert in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96E97B42A18EB6E00443F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96E97BC2A18EB6E00443F15 /* SwiftUI.framework in Frameworks */,
+				C96E97BA2A18EB6E00443F15 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,7 +110,10 @@
 		C96E97992A18EB4300443F15 = {
 			isa = PBXGroup;
 			children = (
+				C96E982D2A1FFC7500443F15 /* MessageWidgetExtension.entitlements */,
 				C96E97A42A18EB4300443F15 /* DailyMessage */,
+				C96E97BD2A18EB6E00443F15 /* MessageWidget */,
+				C96E97B82A18EB6E00443F15 /* Frameworks */,
 				C96E97A32A18EB4300443F15 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				C96E97A22A18EB4300443F15 /* DailyMessage.app */,
+				C96E97B72A18EB6E00443F15 /* MessageWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +130,13 @@
 		C96E97A42A18EB4300443F15 /* DailyMessage */ = {
 			isa = PBXGroup;
 			children = (
+				C96E982C2A1FFB2400443F15 /* DailyMessage.entitlements */,
 				C96E97A52A18EB4300443F15 /* DailyMessageApp.swift */,
-				C96E97A72A18EB4300443F15 /* ContentView.swift */,
+				C96E982E2A1FFE3C00443F15 /* messages.json */,
+				C9D7D1F42A22279E005E44CB /* Model */,
+				C9B7381A2A2CDA290011F49D /* Files */,
+				C96E986E2A22161900443F15 /* Components */,
+				C9D7D1F32A222797005E44CB /* Views */,
 				C96E97A92A18EB4500443F15 /* Assets.xcassets */,
 				C96E97AB2A18EB4500443F15 /* Preview Content */,
 			);
@@ -67,6 +151,62 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C96E97B82A18EB6E00443F15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C96E97B92A18EB6E00443F15 /* WidgetKit.framework */,
+				C96E97BB2A18EB6E00443F15 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C96E97BD2A18EB6E00443F15 /* MessageWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C96E97BE2A18EB6E00443F15 /* MessageWidgetBundle.swift */,
+				C96E97C02A18EB6E00443F15 /* MessageWidget.swift */,
+				C96E97C22A18EB7000443F15 /* Assets.xcassets */,
+				C96E97C42A18EB7000443F15 /* Info.plist */,
+			);
+			path = MessageWidget;
+			sourceTree = "<group>";
+		};
+		C96E986E2A22161900443F15 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C9D7D1F62A26495B005E44CB /* CustomAlertView.swift */,
+				C9D7D1F92A2690A9005E44CB /* ItemView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C9B7381A2A2CDA290011F49D /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9B7381B2A2CDA3E0011F49D /* Bundle-Decodable.swift */,
+				C9B738212A2E2B1B0011F49D /* Color-theme.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		C9D7D1F32A222797005E44CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C96E986B2A22157400443F15 /* TabBarView.swift */,
+				C96E97A72A18EB4300443F15 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9D7D1F42A22279E005E44CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9B7381E2A2E24760011F49D /* Message.swift */,
+				C96E97CF2A18F70B00443F15 /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +217,39 @@
 				C96E979E2A18EB4300443F15 /* Sources */,
 				C96E979F2A18EB4300443F15 /* Frameworks */,
 				C96E97A02A18EB4300443F15 /* Resources */,
+				C96E97CB2A18EB7000443F15 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C96E97C62A18EB7000443F15 /* PBXTargetDependency */,
+			);
+			name = DailyMessage;
+			packageProductDependencies = (
+				C9B738112A2A295D0011F49D /* SPAlert */,
+			);
+			productName = DailyMessage;
+			productReference = C96E97A22A18EB4300443F15 /* DailyMessage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C96E97B62A18EB6E00443F15 /* MessageWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96E97C82A18EB7000443F15 /* Build configuration list for PBXNativeTarget "MessageWidgetExtension" */;
+			buildPhases = (
+				C96E97B32A18EB6E00443F15 /* Sources */,
+				C96E97B42A18EB6E00443F15 /* Frameworks */,
+				C96E97B52A18EB6E00443F15 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DailyMessage;
-			productName = DailyMessage;
-			productReference = C96E97A22A18EB4300443F15 /* DailyMessage.app */;
-			productType = "com.apple.product-type.application";
+			name = MessageWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = MessageWidgetExtension;
+			productReference = C96E97B72A18EB6E00443F15 /* MessageWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +264,9 @@
 					C96E97A12A18EB4300443F15 = {
 						CreatedOnToolsVersion = 14.3;
 					};
+					C96E97B62A18EB6E00443F15 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 				};
 			};
 			buildConfigurationList = C96E979D2A18EB4300443F15 /* Build configuration list for PBXProject "DailyMessage" */;
@@ -111,11 +278,15 @@
 				Base,
 			);
 			mainGroup = C96E97992A18EB4300443F15;
+			packageReferences = (
+				C9B738102A2A295C0011F49D /* XCRemoteSwiftPackageReference "SPAlert" */,
+			);
 			productRefGroup = C96E97A32A18EB4300443F15 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C96E97A12A18EB4300443F15 /* DailyMessage */,
+				C96E97B62A18EB6E00443F15 /* MessageWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +296,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96E982F2A1FFE3C00443F15 /* messages.json in Resources */,
 				C96E97AD2A18EB4500443F15 /* Preview Assets.xcassets in Resources */,
 				C96E97AA2A18EB4500443F15 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96E97B52A18EB6E00443F15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96E97C32A18EB7000443F15 /* Assets.xcassets in Resources */,
+				C9B738192A2CD6ED0011F49D /* messages.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +318,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D7D1F72A26495B005E44CB /* CustomAlertView.swift in Sources */,
+				C9B738222A2E2B1B0011F49D /* Color-theme.swift in Sources */,
 				C96E97A82A18EB4300443F15 /* ContentView.swift in Sources */,
 				C96E97A62A18EB4300443F15 /* DailyMessageApp.swift in Sources */,
+				C96E986C2A22157400443F15 /* TabBarView.swift in Sources */,
+				C9D7D1FA2A2690A9005E44CB /* ItemView.swift in Sources */,
+				C9B7381F2A2E24760011F49D /* Message.swift in Sources */,
+				C9B7381C2A2CDA3E0011F49D /* Bundle-Decodable.swift in Sources */,
+				C96E97D02A18F70B00443F15 /* DataModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96E97B32A18EB6E00443F15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B738152A2A2EBB0011F49D /* DataModel.swift in Sources */,
+				C96E97BF2A18EB6E00443F15 /* MessageWidgetBundle.swift in Sources */,
+				C9D7D1F82A264C43005E44CB /* CustomAlertView.swift in Sources */,
+				C9B738232A2E2DDF0011F49D /* Color-theme.swift in Sources */,
+				C9B738202A2E24760011F49D /* Message.swift in Sources */,
+				C9B7381D2A2CDA3E0011F49D /* Bundle-Decodable.swift in Sources */,
+				C9D7D1FB2A277FE3005E44CB /* ItemView.swift in Sources */,
+				C96E97C12A18EB6E00443F15 /* MessageWidget.swift in Sources */,
+				C96E97F52A1CF86900443F15 /* ContentView.swift in Sources */,
+				C96E986D2A22158300443F15 /* TabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C96E97C62A18EB7000443F15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C96E97B62A18EB6E00443F15 /* MessageWidgetExtension */;
+			targetProxy = C96E97C52A18EB7000443F15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C96E97AE2A18EB4500443F15 /* Debug */ = {
@@ -262,8 +475,10 @@
 		C96E97B12A18EB4500443F15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DailyMessage/DailyMessage.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DailyMessage/Preview Content\"";
@@ -273,8 +488,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,8 +507,10 @@
 		C96E97B22A18EB4500443F15 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DailyMessage/DailyMessage.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DailyMessage/Preview Content\"";
@@ -302,8 +520,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +530,62 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alpaycalalli.DailyMessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C96E97C92A18EB7000443F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MessageWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G8MSA22VSU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MessageWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MessageWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alpaycalalli.DailyMessage.MessageWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C96E97CA2A18EB7000443F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MessageWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G8MSA22VSU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MessageWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MessageWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alpaycalalli.DailyMessage.MessageWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,7 +613,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		C96E97C82A18EB7000443F15 /* Build configuration list for PBXNativeTarget "MessageWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96E97C92A18EB7000443F15 /* Debug */,
+				C96E97CA2A18EB7000443F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9B738102A2A295C0011F49D /* XCRemoteSwiftPackageReference "SPAlert" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanvorobei/SPAlert";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9B738112A2A295D0011F49D /* SPAlert */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9B738102A2A295C0011F49D /* XCRemoteSwiftPackageReference "SPAlert" */;
+			productName = SPAlert;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C96E979A2A18EB4300443F15 /* Project object */;
 }
