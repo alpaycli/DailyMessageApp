@@ -5,7 +5,7 @@ struct ContentView: View {
     @EnvironmentObject var dataModel: DataModel
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ZStack {
                 ScrollView {
                     ForEach(dataModel.topics, id: \.self) { item in
@@ -15,7 +15,6 @@ struct ContentView: View {
                     }
                 }
                 .navigationTitle("Content")
-                .scrollContentBackground(.hidden)
                 .scrollIndicators(.hidden)
                 
                 if dataModel.showAlert {
@@ -23,11 +22,10 @@ struct ContentView: View {
                         .environmentObject(dataModel)
                 }
             }
+            .onAppear(perform: dataModel.loadData)
         }
     }
 }
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

@@ -65,13 +65,43 @@ struct MessageWidgetEntryView: View {
             return newItems?.elements.randomElement() ?? ""
         }
     }
+    
+    var first: String {
+        return String(newMessage.split(separator: ".")[0])
+    }
+    
+    var rest: String {
+        var test = [String]()
+        let arr = newMessage.split(separator: ".")
+        
+        for i in 1..<arr.count {
+            let subsequence = arr[i]
+            let string = String(subsequence)
+            test.append(string + ".")
+        }
+        
+        return test.joined()
+    }
+
 
     var body: some View {
-        Text(newMessage)
-            .fontDesign(.monospaced)
+        if entry.sharedData == .lifeGoal {
+            Group {
+                Text(first + ".")
+                    .fontWeight(.semibold)
+                +
+                Text(rest)
+                    .fontDesign(.monospaced)
+            }
             .padding()
+        } else {
+            Text(newMessage)
+                .fontDesign(.monospaced)
+                .padding()
+        }
     }
 }
+
 
 struct MessageWidget: Widget {
     let kind: String = "MessageWidget"
@@ -89,7 +119,7 @@ struct MessageWidget: Widget {
 
 struct MessageWidget_Previews: PreviewProvider {
     static var previews: some View {
-        MessageWidgetEntryView(entry: MyWidgetEntry(date: Date(), sharedData: Content.waterReminder))
+        MessageWidgetEntryView(entry: MyWidgetEntry(date: Date(), sharedData: Content.movieQuote))
             .previewContext(WidgetPreviewContext(family: .systemMedium))
             .environmentObject(DataModel())
     }

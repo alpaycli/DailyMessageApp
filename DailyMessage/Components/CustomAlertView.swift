@@ -15,7 +15,7 @@ struct CustomAlertView: View {
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
             VStack {
-                Text("\(selected.rawValue)")
+                Text("\(selected.rawValue) succesfully set")
                     .font(.title3)
                     .foregroundColor(.white)
                     .fontWeight(.bold)

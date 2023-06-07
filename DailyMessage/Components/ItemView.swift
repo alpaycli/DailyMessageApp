@@ -7,6 +7,8 @@
 
 import CoreHaptics
 import SwiftUI
+import CoreImage
+import CoreImage.CIFilterBuiltins
 
 struct ItemView: View {
     @EnvironmentObject var dataModel: DataModel
@@ -60,12 +62,15 @@ struct ItemView: View {
         }
     }
     
+    @State private var clicked = false
+    
     var body: some View {
         VStack(alignment: .leading) {
             Section {
                 Image("\(imageName)")
                     .resizable()
                     .scaledToFill()
+                    .grayscale(1)
             }
             
             VStack(alignment: .leading) {
@@ -80,12 +85,12 @@ struct ItemView: View {
                     Button {
                         dataModel.selectedContent = selected
                         
-                        dataModel.showAlert = true
-                        
                         dataModel.simpleSuccess()
-                        
+                        clicked = true
+                        delayText()
+
                     } label: {
-                        Image(systemName: "camera.fill")
+                        Image(systemName: selected == dataModel.selectedContent ? "heart.fill" : "plus.circle.fill")
                     }
                     .foregroundStyle(
                         LinearGradient(colors: [.blue, .yellow], startPoint: .topLeading, endPoint: .bottomLeading )
@@ -101,6 +106,14 @@ struct ItemView: View {
         .frame(maxWidth: UIScreen.main.bounds.size.width - 30)
         .cornerRadius(10)
     }
+    private func delayText() {
+           // Delay of 7.5 seconds
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+               withAnimation {
+                   clicked = false
+               }
+           }
+       }
 }
 
 struct ItemView_Previews: PreviewProvider {
