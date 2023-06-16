@@ -1,19 +1,33 @@
 //
-//  ItemView.swift
+//  CardView.swift
 //  DailyMessage
 //
-//  Created by Alpay Calalli on 31.05.23.
+//  Created by Alpay Calalli on 16.06.23.
 //
 
-import CoreHaptics
 import SwiftUI
 
-struct ItemView: View {
+struct CardView: View {
     @EnvironmentObject var dataModel: DataModel
     
     @Environment(\.colorScheme) var colorScheme
-
+    
     var content: String
+    
+    var emoji: String {
+        switch content {
+        case "Daily Movie Quote Messages":
+            return " 🎬"
+        case "Daily Milestones":
+            return " 🌎"
+        case "Daily Song Recommendation":
+            return " 🎶"
+        case "Daily Water Reminder":
+            return " 🚰"
+        default:
+            return ""
+        }
+    }
     
     var description: String {
         switch content {
@@ -63,20 +77,16 @@ struct ItemView: View {
     @State private var clicked = false
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            Section {
-                Image("\(imageName)")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .grayscale(1)
-            }
-            
-            VStack(alignment: .leading) {
+        VStack(alignment: .leading) {
+            Group {
+                Text(content + emoji)
+                    .font(.headline)
+                    .padding(.top, 15)
+                    .padding(.bottom, 10)
+                
                 HStack {
-                    Text(content)
-                        .fontDesign(.monospaced)
-                        .fontWeight(.semibold)
-                        .padding(.vertical, 5)
+                    Text(description)
+                        .font(.subheadline)
                     
                     Spacer()
                     
@@ -86,36 +96,40 @@ struct ItemView: View {
                         dataModel.simpleSuccess()
                         clicked = true
                         delayText()
-
                     } label: {
                         Image(systemName: selected == dataModel.selectedContent ? "heart.fill" : "plus.circle.fill")
+                            .foregroundColor(.blue)
+                            .font(.system(size: 20))
                     }
                     .foregroundColor(.primary)
+                  //  .buttonStyle(PlainButtonStyle())
                     .disabled(dataModel.selectedContent == selected)
                 }
-                
-                Text(description)
-                    .foregroundColor(.secondary)
+                .padding(.bottom)
             }
-            .padding()
-            .background(colorScheme == .dark ? .darkBackground : .lightBackground)
+            .padding(.horizontal)
+            .foregroundColor(.primary)
         }
-        .frame(maxWidth: UIScreen.main.bounds.size.width - 30)
+        .frame(maxWidth: 330)
+        .background(colorScheme == .dark ? .darkBackground : .lightBackground)
         .cornerRadius(10)
+        .shadow(color: Color.gray.opacity(0.4), radius: 5, x: 0, y: 2)
+        .padding()
     }
     private func delayText() {
-           // Delay of 1.5 seconds
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-               withAnimation {
-                   clicked = false
-               }
-           }
-       }
+        // Delay of 1.5 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            withAnimation {
+                clicked = false
+            }
+        }
+    }
+    
 }
 
-struct ItemView_Previews: PreviewProvider {
+struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemView(content: "Daily Movie Quote Messages")
+        CardView(content: "Daily Movie Quote Messages")
             .environmentObject(DataModel())
     }
 }

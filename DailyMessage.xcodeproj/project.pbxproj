@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C92148CE2A3CABFA00459C01 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92148CD2A3CABFA00459C01 /* CardView.swift */; };
+		C92148CF2A3CABFA00459C01 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92148CD2A3CABFA00459C01 /* CardView.swift */; };
 		C96E97A62A18EB4300443F15 /* DailyMessageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E97A52A18EB4300443F15 /* DailyMessageApp.swift */; };
 		C96E97A82A18EB4300443F15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E97A72A18EB4300443F15 /* ContentView.swift */; };
 		C96E97AA2A18EB4500443F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96E97A92A18EB4500443F15 /* Assets.xcassets */; };
@@ -62,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C92148CD2A3CABFA00459C01 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C96E97A22A18EB4300443F15 /* DailyMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96E97A52A18EB4300443F15 /* DailyMessageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMessageApp.swift; sourceTree = "<group>"; };
 		C96E97A72A18EB4300443F15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -176,6 +179,7 @@
 			children = (
 				C9D7D1F62A26495B005E44CB /* CustomAlertView.swift */,
 				C9D7D1F92A2690A9005E44CB /* ItemView.swift */,
+				C92148CD2A3CABFA00459C01 /* CardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -322,6 +326,7 @@
 				C9B738222A2E2B1B0011F49D /* Color-theme.swift in Sources */,
 				C96E97A82A18EB4300443F15 /* ContentView.swift in Sources */,
 				C96E97A62A18EB4300443F15 /* DailyMessageApp.swift in Sources */,
+				C92148CE2A3CABFA00459C01 /* CardView.swift in Sources */,
 				C96E986C2A22157400443F15 /* TabBarView.swift in Sources */,
 				C9D7D1FA2A2690A9005E44CB /* ItemView.swift in Sources */,
 				C9B7381F2A2E24760011F49D /* Message.swift in Sources */,
@@ -343,6 +348,7 @@
 				C9D7D1FB2A277FE3005E44CB /* ItemView.swift in Sources */,
 				C96E97C12A18EB6E00443F15 /* MessageWidget.swift in Sources */,
 				C96E97F52A1CF86900443F15 /* ContentView.swift in Sources */,
+				C92148CF2A3CABFA00459C01 /* CardView.swift in Sources */,
 				C96E986D2A22158300443F15 /* TabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

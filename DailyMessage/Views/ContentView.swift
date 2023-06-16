@@ -9,9 +9,9 @@ struct ContentView: View {
             ZStack {
                 ScrollView {
                     ForEach(dataModel.topics, id: \.self) { item in
-                        ItemView(content: item)
+                        CardView(content: item)
                             .environmentObject(dataModel)
-                            .padding(.vertical)
+                           // .padding(.vertical)
                     }
                 }
                 .navigationTitle("Content")
@@ -31,15 +31,5 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(DataModel())
-            .previewDevice("iPhone SE")
-        
-        ContentView()
-            .environmentObject(DataModel())
-            .previewDevice("iPhone X")
-        
-        ContentView()
-            .environmentObject(DataModel())
-            .previewDevice("iPhone 14 Pro")
-        
     }
 }

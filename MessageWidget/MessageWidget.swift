@@ -119,7 +119,7 @@ struct MessageWidget: Widget {
 
 struct MessageWidget_Previews: PreviewProvider {
     static var previews: some View {
-        MessageWidgetEntryView(entry: MyWidgetEntry(date: Date(), sharedData: Content.movieQuote))
+        MessageWidgetEntryView(entry: MyWidgetEntry(date: Date(), sharedData: Content.lifeGoal))
             .previewContext(WidgetPreviewContext(family: .systemMedium))
             .environmentObject(DataModel())
     }
